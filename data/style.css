@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+.title {
+  margin-top: 1em;
+  display: flex;
+  width: 70vw;
+  justify-content: center;
+  border: 2px solid purple;
+  height: fit-content;
+  padding: 20px 10px;
+  border-radius: 20px;
+  color: purple;
+}
+.title.on {
+  border: 2px solid red;
+  color: red;
+}
+.title.on:active {
+  border: 2px solid red;
+  color: white;
+  background-color: red;
+}
+
+.title.off {
+  border: 2px solid green;
+  color: green;
+}
+.title.off:active {
+  border: 2px solid green;
+  color: white;
+  background-color: green;
+}
+.title.worked {
+  display: flex;
+  margin-bottom: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border: 2px solid black;
+  color: black;
+}
+.title.worked>div {
+  margin-top: 1em;
+  display: flex;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: black;
+  justify-content: center;
+}
+.wrap_lamp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lamp.on {
+  border: 1px solid red;
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  border-radius: 50%;
+}
+.lamp {
+  border: 1px solid green;
+  width: 70px;
+  height: 70px;
+  background-color: green;
+  border-radius: 50%;
+}
